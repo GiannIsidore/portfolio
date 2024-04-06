@@ -31,7 +31,20 @@ const Hero = () => {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.......
             </p>
             {/* Buttons */}
-            <div>Buttons</div>
+            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0">
+              <Link href="/contact">
+                <Button className="gap-x-2">
+                  Reach me here
+                  <Send size={18} />
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button variant="secondary" className="gap-x-2">
+                  Download CV
+                  <Download size={18} />
+                </Button>
+              </Link>
+            </div>
           </div>
           {/* image */}
           <div className="hidden xl:flex relative">image</div>
